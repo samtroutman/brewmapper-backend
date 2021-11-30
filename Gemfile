@@ -42,3 +42,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rest-client'
 
 gem "http", "~> 5.0"
+
+gem "active_model_serializers", "~> 0.10.12"

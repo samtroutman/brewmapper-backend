@@ -1,7 +1,7 @@
 class BreweriesController < ApplicationController
 
     def index
-        breweries = Brewery.ApplicationController
+        breweries = Brewery.all
         render json: breweries
     end
 end
