@@ -7,7 +7,7 @@ class BreweriesController < ApplicationController
 
     def show
         brewery = Brewery.find(params[:id])
-        render json: restaurant
+        render json: restaurant, serializer: BreweryShowSerializer
     end
-    
+
 end
