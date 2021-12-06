@@ -10,4 +10,8 @@ class SessionsController < ApplicationController
         end
     end
 
+    def autologin
+        byebug
+    end
+
 end
