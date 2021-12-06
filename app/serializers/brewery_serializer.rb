@@ -1,3 +1,3 @@
 class BrewerySerializer < ActiveModel::Serializer
-  attributes :id, :name, :city, :state
+  attributes :id, :status, :name, :city, :state
 end
