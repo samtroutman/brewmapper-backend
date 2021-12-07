@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
     def show
         user = User.find(params[:id])
-        render json: user, serializer: UserSerializer
+        render json: user, serializer: UserSerializer, key_transform: :camel_lower
     end
 
     private
