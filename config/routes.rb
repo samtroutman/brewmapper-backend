@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :saved_breweries
-  resources :users, only: [:create, :show]
+  resources :users, only: [:create, :show] do 
+    resources :saved_breweries, only: [:create]
+  end
   resources :breweries, only: [:index, :show]
   resources :sessions, only: [:create]
   get "/me", to: 'sessions#autologin'
